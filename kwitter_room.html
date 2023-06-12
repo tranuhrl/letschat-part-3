@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" type = "text/css" href = "kwitter.css">
+    <script src = "kwitter_room.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <br>
+        <button id = "logout_button" class = "btn btn-danger" onclick = "logout()">Logout</button>
+        <br>
+        <br>
+        <br>
+        <center>
+            <h1>LetsChat</h1>
+        </center>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br>
+        <center>
+            <h3 id = "user_name" class = "color_white">
+        
+            </h3>
+            <div class = "form-group">
+                <label>Room Name:</label>
+                <input type = "text" id = "room_name" class = "form-control" placeholder = "Room Name Here">
+                <br>
+                <button id = "enter_room" onclick = "addRoom()" class = "btn btn-success">Enter Room</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+        <br>
+            <h4>
+                Trending Rooms:
+            </h4>
+            <style>
+                h4
+                {
+                    color:firebrick;
+                }
+            </style>
+            <div id = "rooms" class = "container"></div>
+
+            <div id = "output"></div>
+        </center>
+    </div>
+</html>
